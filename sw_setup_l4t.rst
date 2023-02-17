@@ -9,6 +9,16 @@ Hardware setup
 The host software is prepared for Jetson Xavier NX module on `Antmicro's Jetson Nano Baseboard <https://github.com/antmicro/jetson-nano-baseboard>`_.
 The SDI-MIPI Bridge board is connected to the J7 FFC connector of the baseboard.
 
+Due to the SDI-MIPI Bridge's wide range of capabilities and possible support for various different configurations it has 12 Dip-switches for the SDI deserializer setup.
+Those variants can be altered by setting the initial switches configuration.
+Detailed description of their functions is available in the `Semtech Deserializer documentation <https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/44000000MD3i/kpmMkrmUWgHlbCOwdLzVohMm1SDPoVH85guEGK.KXTc>`_.
+
+Below you can find short description of each switch with its default value:
+
+.. csv-table::
+   :file: switches.csv
+   :header-rows: 1
+
 Building the software
 ---------------------
 
